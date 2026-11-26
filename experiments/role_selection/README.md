@@ -4,9 +4,11 @@ This experiment compares two decisions about the same person in the same passage
 
 ## Reproduce
 
-From the root of this fork, install the experiment dependencies in a Python 3.10 or 3.11 environment. The reference run used Python 3.10, PyTorch 2.1.1 with CUDA 12.1 and Transformers 4.35.2. A CPU can run both released models.
+Clone this fork and install the experiment dependencies in a Python 3.10 or 3.11 environment. The reference run used Python 3.10, PyTorch 2.1.1 with CUDA 12.1 and Transformers 4.35.2. A CPU can run both released models.
 
 ~~~sh
+git clone https://github.com/Halo021501/emerge.git
+cd emerge
 pip install -r experiments/role_selection/requirements.txt
 ~~~
 
@@ -71,6 +73,8 @@ To refit both estimators at the selected settings from the pinned 2019 corpus, o
 python experiments/role_selection/fit.py
 python experiments/role_selection/run.py --weights-dir output/role_selection/refit --output output/role_selection/refitted-evaluation
 ~~~
+
+In the reference GPU environment, rerunning the 2019 fit reproduced all 48 tensors in the reranker checkpoint and all six text-model arrays exactly. CPU and GPU inference both reproduced the 984 original paired decisions.
 
 ## Upstream prediction format
 

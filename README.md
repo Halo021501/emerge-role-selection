@@ -7,7 +7,7 @@
 
 # EMERGE: A Benchmark for Updating Knowledge Graphs with Emerging Textual Knowledge
 
-**[Paper](https://arxiv.org/abs/2507.03617)** | **[Dataset](https://huggingface.co/datasets/klimzaporojets/emerge-benchmark)** | **[Code](https://github.com/klimzaporojets/emerge)**
+**[Paper](https://arxiv.org/abs/2507.03617)** | **[Dataset](https://huggingface.co/datasets/klimzaporojets/emerge-benchmark)** | **[Upstream code](https://github.com/klimzaporojets/emerge)**
 
 Repository for the **EMERGE** benchmark: a dataset and evaluation framework for
 **Text-driven KG Updating (TKGU)** — evaluating methods for updating knowledge
@@ -27,7 +27,7 @@ This fork adds a [fixed-opportunity deprecation experiment](experiments/role_sel
 
 ```bash
 # 1. Clone and set up
-git clone https://github.com/klimzaporojets/emerge.git
+git clone https://github.com/Halo021501/emerge.git
 cd emerge
 conda create -n emerge python=3.12 -y && conda activate emerge
 pip install torch torchvision torchaudio
