@@ -329,7 +329,7 @@ class EMERGEPreLoader(EvaluationPreLoader):
                             predicted_triples_cie=predicted_triples_cie,
                             pred_triple_qid_to_labels=pred_triple_qid_to_labels
                         )
-                    elif model_type == 'kg-prompt':
+                    elif model_type in {'kg-prompt', 'operation-tagged'}:
                         self.process_kg_prompt_predictions(
                             curr_model_name=curr_model_name,
                             curr_predictions=curr_predictions,

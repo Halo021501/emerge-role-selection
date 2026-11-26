@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "seed": 73,
+  "train_year": 2019,
+  "development_year": 2020,
+  "independent_year": 2022,
+  "train_folds": 4,
+  "checkpoint_epochs": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "epoch_selection": "highest mean 2019 article-fold average precision, earliest on a tie",
+  "max_windows": 8,
+  "window_words": 48,
+  "window_stride": 32,
+  "max_tokens": 160,
+  "batch_pairs": 12,
+  "encoder_lr": 5e-05,
+  "head_lr": 0.0015,
+  "dropout": 0.15,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "switch_logit_margin": 0.4054651081081644,
+  "decision": "For an emitted P39 with multiple frozen P39 candidates for the chosen subject, replace the incumbent only if its best competitor leads by more than log(1.5). Use locked candidate order to break competitor ties.",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 73,
+  "fresh_year_exclusion": "Exclude overlap by anchor QID/page ID, revision, exact text or the existing 85% five-gram rule against the fixed training rows and previously used official cohorts (2019, 2020, 2021, 2023, 2024, 2025).",
+  "gate": "hits > 42 and wrong_p39_keep <= 15, or hits >= 42 and wrong_p39_keep < 15"
+}

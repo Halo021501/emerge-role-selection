@@ -13,6 +13,8 @@ Repository for the **EMERGE** benchmark: a dataset and evaluation framework for
 **Text-driven KG Updating (TKGU)** — evaluating methods for updating knowledge
 graphs from textual evidence.
 
+This fork adds a [fixed-opportunity deprecation experiment](experiments/role_selection/README.md). It compares a text baseline with an optional BERT reranker when one person holds several offices. The experiment includes a one-command reproduction, article-paired results for 2020 and 2022, and an input format for evaluating another model on the same choices.
+
 > ### ⭐ KG-aware baseline
 > A targeted **GPT-5.1 baseline with access to the KG snapshot** (`oracle` / `kg_rag@32` /
 > `oracle+kg_rag`), added to test whether feeding KG structure closes the gap the IE-only baselines
