@@ -7,8 +7,8 @@ This experiment compares two decisions about the same person in the same passage
 Clone this fork and install the experiment dependencies in a Python 3.10 or 3.11 environment. The reference run used Python 3.10, PyTorch 2.1.1 with CUDA 12.1 and Transformers 4.35.2. A CPU can run both released models.
 
 ~~~sh
-git clone https://github.com/Halo021501/emerge.git
-cd emerge
+git clone https://github.com/Halo021501/emerge-role-selection.git
+cd emerge-role-selection
 pip install -r experiments/role_selection/requirements.txt
 ~~~
 

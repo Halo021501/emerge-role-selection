@@ -27,8 +27,8 @@ This fork adds a [fixed-opportunity deprecation experiment](experiments/role_sel
 
 ```bash
 # 1. Clone and set up
-git clone https://github.com/Halo021501/emerge.git
-cd emerge
+git clone https://github.com/Halo021501/emerge-role-selection.git
+cd emerge-role-selection
 conda create -n emerge python=3.12 -y && conda activate emerge
 pip install torch torchvision torchaudio
 pip install -r requirements/core.txt
